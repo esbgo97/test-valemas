@@ -14,7 +14,7 @@ insert  into vehiculos (marca, modelo, descripcion) values ('Mazda', 2022, 'Mazd
 insert  into vehiculos (marca, modelo, descripcion) values ('Toyota', 2023, 'Supra MK5');
 
 
---Punto 1. Crear vista de vehiculos nuevos
+--Punto 2. Crear vista de vehiculos nuevos
 create view vehiculos_nuevos as
 	select * from vehiculos
 	where modelo >= extract (year from now()) - 5
